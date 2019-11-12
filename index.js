@@ -7,7 +7,7 @@ app.get("/index/hello", (req, res) => {
     res.send("Hello world");
 });
 
-app.post("/index/getUsers", async function (req, response) {
+app.post("/index/getUsers", async function (req, res) {
     const sqlQuery = 'SELECT *  FROM `user`';
     res.send(sqlQuery);
 });
